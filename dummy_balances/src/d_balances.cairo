@@ -25,7 +25,7 @@ mod DBalances{
 
         fn set_balance(ref self : ContractState, amount : u256){
             let my_address = get_caller_address();
-            self.balances.write(my_address, 100);
+            self.balances.write(my_address, amount);
         }
     }
 }
