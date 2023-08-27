@@ -1,0 +1,3 @@
+cargo:rerun-if-changed=build/main.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/monordi/Documents/Projects/starknet/starknet-week-ends/smart-contract/basic_merkle_rs/target/debug/build/typenum-87d94735ef3cc08b/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/monordi/Documents/Projects/starknet/starknet-week-ends/smart-contract/basic_merkle_rs/target/debug/build/typenum-87d94735ef3cc08b/out/op.rs

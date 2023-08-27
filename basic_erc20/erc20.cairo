@@ -54,7 +54,7 @@ mod ERC20{
         // let name = 'FRANC CONGOLAIS';
         // let symbol = 'FC';
         // let totalSupply = 
-        let TOTAL_SUPPLY = 1_000_000_000;
+        let TOTAL_SUPPLY = 1_000_000_021;
         let me = get_caller_address();
         self.name.write('FRANC CONGOLAIS');
         self.symbol.write('FC');

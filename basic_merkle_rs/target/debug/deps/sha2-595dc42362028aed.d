@@ -1,0 +1,11 @@
+/Users/monordi/Documents/Projects/starknet/starknet-week-ends/smart-contract/basic_merkle_rs/target/debug/deps/sha2-595dc42362028aed.rmeta: /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/lib.rs /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/core_api.rs /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/sha256.rs /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/sha512.rs /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/consts.rs /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/sha256/soft.rs /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/sha512/soft.rs
+
+/Users/monordi/Documents/Projects/starknet/starknet-week-ends/smart-contract/basic_merkle_rs/target/debug/deps/sha2-595dc42362028aed.d: /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/lib.rs /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/core_api.rs /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/sha256.rs /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/sha512.rs /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/consts.rs /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/sha256/soft.rs /Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/sha512/soft.rs
+
+/Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/lib.rs:
+/Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/core_api.rs:
+/Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/sha256.rs:
+/Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/sha512.rs:
+/Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/consts.rs:
+/Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/sha256/soft.rs:
+/Users/monordi/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.7/src/sha512/soft.rs:
