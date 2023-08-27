@@ -49,6 +49,35 @@ mod ERC20{
         _value : u256
     }
 
+    #[constructor]
+    fn constructor(ref self : ContractState){
+        // let name = 'FRANC CONGOLAIS';
+        // let symbol = 'FC';
+        // let totalSupply = 
+        let TOTAL_SUPPLY = 1_000_000_000;
+        let me = get_caller_address();
+        self.name.write('FRANC CONGOLAIS');
+        self.symbol.write('FC');
+        self.decimals.write(10);
+        self.totalSupply.write(TOTAL_SUPPLY);
+        self.balances.write(me, TOTAL_SUPPLY);
+    }
+
+    // #[generate_trait]
+    // impl InternalFunctions of InternalFunctionsTrait{
+        
+    // }
+
+    fn _transfer_util(ref self : ContractState, _from : ContractAddress, _to : ContractAddress, _value : u256) -> bool{
+        let sender_balance = self.balances.read(_from);
+        assert(sender_balance <= _value, 'ERC20 : INSUFFICIENT FUNDS');
+        self.balances.write(_from, sender_balance - _value);
+        let to_balance = self.balances.read(_to);
+        self.balances.write(_to, to_balance + _value );
+        self.emit(Event::Transfer(Transfer{_from, _to, _value}));
+        true
+    }
+
     #[external(v0)]
     impl ERC20 of super::I_ERC20<ContractState>{
         fn name(self : @ContractState) -> felt252 {
@@ -75,15 +104,21 @@ mod ERC20{
             // self.symbol.read()
             let me = get_caller_address();
             // assert(_to == 0, 'ERC20 : SENDING TO 0');
-            
-            false
+            _transfer_util(ref self, me, _to, _value)
         }
 
         fn transferFrom(ref self : ContractState, _from : ContractAddress, _to : ContractAddress, _value : u256) -> bool{
+            let me = get_caller_address();
+            let my_allowance = self.allowances.read((_from, me));
+            assert(my_allowance <= _value, 'ERC20 : NOT ALLOWED');
+            _transfer_util(ref self, _from, _to, _value);
             false
         }
 
         fn approve(ref self : ContractState, _spender : ContractAddress, _value : u256) -> bool {
+            let me = get_caller_address();
+            self.allowances.write((me, _spender), _value);
+            self.emit(Event::Approve(Approve { _owner : me, _spender , _value}));
             false 
         }
 
