@@ -1,1 +1,0 @@
-/Users/monordi/Documents/Projects/starknet/starknet-week-ends/smart-contract/basic_merkle_rs/target/debug/basic_merkle_rs: /Users/monordi/Documents/Projects/starknet/starknet-week-ends/smart-contract/basic_merkle_rs/src/main.rs
